@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAS SAYAH</title>
+    <!-- FontAwesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: stretch;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #111;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        .sidebar img {
+            display: block;
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background-color: #333;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .main-content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .article {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #666;
+            padding-bottom: 20px;
+        }
+
+        .article h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .article p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        /* Night mode */
+        body.dark-mode {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .dark-mode .sidebar {
+            background-color: #333;
+        }
+
+        .dark-mode .sidebar a {
+            color: #fff;
+        }
+
+        /* Light mode */
+        body.light-mode {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .light-mode .sidebar {
+            background-color: #f0f0f0;
+        }
+
+        .light-mode .sidebar a {
+            color: #000;
+        }
+
+        /* Toggle mode button */
+        #toggle-mode {
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        #toggle-mode:hover {
+            background-color: #555;
+        }
+
+        /* Social links */
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .social-links a:hover {
+            color: #0072b1;
+        }
+
+        /* Adjust social links color for light mode */
+        .light-mode .social-links a {
+            color: #000;
+        }
+
+        .light-mode .social-links a:hover {
+            color: #0072b1;
+        }
+
+        /* Light mode specific styles */
+        .light-mode .main-content h1,
+        .light-mode .article h2,
+        .light-mode .article p {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="me.png" alt="Your photo">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#objectives">Objectives</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/anas-sayah/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SAYAHANAS" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Hello, I'm ANAS SAYAH</h1>
+            <div style="display: flex; align-items: center;">
+                <a href="https://tryhackme.com/p/2083946"><img src="https://tryhackme-badges.s3.amazonaws.com/DIPLER.png" alt="TryHackMe" style="height: 40px; margin-left: 10px;" /></a>
+            </div>
+
+            <div id="about-me" class="article">
+                <h2>About Me</h2>
+                <p>I am ANAS SAYAH, a Cybersecurity student at the University Hassan 2 in Casablanca, Morocco, expected to graduate in July 2024. I am a passionate CyberSecurity enthusiast with a strong background in Network and Security. With a ranking in the top 5% on TryHackMe and active participation in Capture The Flag (CTF) competitions, I thrive on the challenges of the cybersecurity landscape. My education has equipped me with a robust foundation in technology, which I am eager to leverage to solve complex problems and enhance security measures in the digital world.
+                </p>
+            </div>
+
+            <div id="objectives" class="article">
+                <h2>Objectives</h2
+                <p>My journey in computer science has ignited a deep interest in cybersecurity, driving me to pursue a career in this dynamic field. I am committed to continuous learning and staying updated with the latest advancements in cybersecurity to contribute proactively to any team I join.
+                </p>
+            </div>
+            <div id="tools" class="article">
+                <h2>Tools</h2>
+                <p>
+                    <div>
+                        <a href="https://www.google.com/search?q=Wireshark"><img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" /></a>
+                        <a href="https://www.google.com/search?q=Nmap"><img src="https://img.shields.io/badge/-Nmap-4682B4?&style=for-the-badge&logo=Nmap&logoColor=white" /></a>
+                        <a href="https://www.google.com/search?q=Burp+Suite"><img src="https://img.shields.io/badge/-Burp_Suite-FF7F50?&style=for-the-badge&logo=BurpSuite&logoColor=white" /></a>
+                        <a href="https://www.google.com/search?q=John+the+Ripper"><img src="https://img.shields.io/badge/-John_the_Ripper-FF4500?&style=for-the-badge&logo=John-the-Ripper&logoColor=white" /></a>
+                        <a href="https://www.google.com/search?q=Metasploit"><img src="https://img.shields.io/badge/-Metasploit-4B0082?&style=for-the-badge&logo=Metasploit&logoColor=white" /></a>
+                        <a href="https://www.google.com/search?q=Hydra+tool"><img src="https://img.shields.io/badge/-Hydra-228B22?&style=for-the-badge&logo=Hydra&logoColor=white" /></a>
+                    </div>
+                </p>
+            </div>
+
+            <div id="certifications" class="article">
+                <h2>Certifications</h2>
+                <p>
+                    <div>
+                        <img src="https://img.shields.io/badge/-Introduction_to_Cybersecurity_(Cisco)-blue?&style=for-the-badge&logo=Cisco&logoColor=white" />
+                        <img src="https://img.shields.io/badge/-Introduction_to_IT_&_Cybersecurity_(Cybrary)-green?&style=for-the-badge&logo=Cybrary&logoColor=white" />
+                        <img src="https://img.shields.io/badge/-Network_Fundamentals_(Cybrary)-blue?&style=for-the-badge&logo=Cybrary&logoColor=white" />
+                        <img src="https://img.shields.io/badge/-Fortinet_Certified_Fundamentals_in_Cybersecurity_(Fortinet)-red?&style=for-the-badge&logo=Fortinet&logoColor=white" />
+                        <img src="https://img.shields.io/badge/-Introduction_to_CyberSecurity_Learning_Path_(TryHackMe)-purple?&style=for-the-badge&logo=TryHackMe&logoColor=white" />
+                    </div>
+                </p>
+            </div>
+
+            <div id="projects" class="article">
+                <h2>Projects</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toggle Mode Button -->
+    <button id="toggle-mode" aria-label="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button>
+
+    <script>
+        const toggleButton = document.getElementById('toggle-mode');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        });
+    </script>
+</body>
+</html>
