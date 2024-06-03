@@ -97,6 +97,7 @@
             color: #ccc;
         }
 
+
         /* Night mode */
         body.dark-mode {
             background-color: #000;
@@ -191,6 +192,7 @@
             <ul>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#objectives">Objectives</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#tools">Tools</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -215,10 +217,27 @@
             </div>
 
             <div id="objectives" class="article">
-                <h2>Objectives</h2
-                <p>My journey in computer science has ignited a deep interest in cybersecurity, driving me to pursue a career in this dynamic field. I am committed to continuous learning and staying updated with the latest advancements in cybersecurity to contribute proactively to any team I join.
-                </p>
+                <h2>Objectives</h2>
+                <p>My journey in computer science has ignited a deep interest in cybersecurity, driving me to pursue a career in this dynamic field. I am committed to continuous learning and staying updated with the latest advancements in cybersecurity to contribute proactively to any team I join. </p>
             </div>
+
+<div id="education" class="article">
+    <h2>Education</h2>
+    <div>
+        <img src="univh2.png" alt="University Logo" style="height: 40px; margin-right: 10px;">
+        <strong>Université Hassan II de Casablanca</strong><br>
+        <span>MASTER IN MATHEMATICS, CRYPTOGRAPHY, AND CYBERSECURITY</span><br>
+        <span>2022 - 2024</span>
+    </div>
+    <br>
+    <div>
+        <img src="univh2.png" alt="University Logo" style="height: 40px; margin-right: 10px;">
+        <strong>Université Hassan II de Casablanca</strong><br>
+        <span>Bachelor's in Mathematics</span><br>
+        <span>2019 - 2022</span>
+    </div>
+</div>
+
             <div id="tools" class="article">
                 <h2>Tools</h2>
                 <p>
@@ -262,7 +281,7 @@
             document.body.classList.toggle('dark-mode');
             document.body.classList.toggle('light-mode');
             if (document.body.classList.contains('dark-mode')) {
-                toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+                                toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
             } else {
                 toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
             }
@@ -270,3 +289,4 @@
     </script>
 </body>
 </html>
+
